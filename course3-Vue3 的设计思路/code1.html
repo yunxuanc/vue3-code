@@ -3,7 +3,7 @@
 <script>
 function renderer(vnode, container) {
   // 使用 vnode.tag 作为标签名称创建 DOM 元素
-	const el = document.createElement(vnode.tag)
+  const el = document.createElement(vnode.tag)
   // 遍历 vnode.props 将属性、事件添加到 DOM 元素
   for (const key in vnode.props) {
     if (/^on/.test(key)) {
